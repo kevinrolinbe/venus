@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,target-densitydpi=device-dpi, user-scalable=no">
+
+  <title>Venus - Kevinrolin.be</title>
+
+  <link type="text/css" href="../src/cookiedisclaimer/style.css" rel="stylesheet">
+  <style>
+    div[class^="venus-cookiedisclaimer"],
+    div[class*="venus-cookiedisclaimer"]{
+      background: lightgrey;
+    }
+  </style>
+</head>
+<body>
+  <!-- https://github.com/kevinrolinbe/venus -->
+
+  <div class="venus-cookiedisclaimer-modal-right-top">
+    <div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent auctor placerat ipsum, accumsan convallis elit interdum non. Curabitur at lorem a turpis tempus egestas. Curabitur ante libero, malesuada quis tincidunt non, euismod sed mi.</p></div>
+    <button class="venus-cookiedisclaimer-confirm">Confirm</button>
+  </div>
+
+  <div class="venus-cookiedisclaimer-full-bottom">
+    <div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent auctor placerat ipsum, accumsan convallis elit interdum non. Curabitur at lorem a turpis tempus egestas. Curabitur ante libero, malesuada quis tincidunt non, euismod sed mi.</p></div>
+    <button class="venus-cookiedisclaimer-confirm">Confirm</button>
+  </div>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="../src/cookiedisclaimer/script.min.js"></script>
+
+  <!-- Reset for sample -->
+  <button class="reset">Reset</button>
+  <script>
+    $(document).ready(function () {
+      $('button.reset')
+        .on('click', function(e){
+          sessionStorage.removeItem('venus-cookiedisclaimer');
+          location.reload();
+        });
+    });
+  </script>
+
+</body>
+</html>

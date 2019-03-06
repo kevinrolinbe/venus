@@ -1,0 +1,47 @@
+div[class^="venus-cookiedisclaimer"],
+div[class*="venus-cookiedisclaimer"] {
+  display: none;
+  position: fixed;
+  z-index: 10001; }
+  div[class^="venus-cookiedisclaimer"].show,
+  div[class*="venus-cookiedisclaimer"].show {
+    display: block; }
+
+[class^="venus-cookiedisclaimer-modal"],
+[class*="venus-cookiedisclaimer-modal"] {
+  width: 300px;
+  max-width: 90%;
+  padding: 10px 25px;
+  box-sizing: border-box; }
+
+.venus-cookiedisclaimer-modal-left-top {
+  left: 25px;
+  top: 25px; }
+
+.venus-cookiedisclaimer-modal-right-top {
+  right: 25px;
+  top: 25px; }
+
+.venus-cookiedisclaimer-modal-left-bottom {
+  left: 25px;
+  bottom: 25px; }
+
+.venus-cookiedisclaimer-modal-right-bottom {
+  right: 25px;
+  bottom: 25px; }
+
+[class^="venus-cookiedisclaimer-full"],
+[class*="venus-cookiedisclaimer-full"] {
+  width: 100%;
+  padding: 10px 25px;
+  box-sizing: border-box;
+  right: 0;
+  left: 0; }
+
+.venus-cookiedisclaimer-full-top {
+  top: 0; }
+
+.venus-cookiedisclaimer-full-bottom {
+  bottom: 0; }
+
+/*# sourceMappingURL=style.css.map */
