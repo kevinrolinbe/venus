@@ -1,0 +1,32 @@
+.venus-modal,
+.venus-m {
+	display: none;
+	position: fixed; /* Stay in place */
+	z-index: 10001; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	width: 100vw;
+	height: 100vh;
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+
+	.venus-modal-content,
+	.venus-m-c {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		max-width: 90%;
+		max-height: 90%;
+
+		box-sizing: border-box;
+		padding: 30px;
+
+		background: white;
+
+		overflow: auto;
+	}
+}
