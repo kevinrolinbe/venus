@@ -1,0 +1,73 @@
+.venus-h,
+.venus-hero{
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+
+	.venus-h-c,
+	.venus-hero-content{
+		position: relative;
+		height: 100%;
+
+		[class^="venus-h-c-e"],
+		[class*="venus-h-c-e"],
+		[class^="venus-hero-content-element"],
+		[class*="venus-hero-content-element"]{
+			clear: both;
+			position: absolute;
+		}
+
+		.venus-h-c-e-l-t,
+		.venus-hero-content-element-left-top{
+			top: 0;
+			left: 0;
+		}
+		.venus-h-c-e-c-t,
+		.venus-hero-content-element-center-top{
+			top: 0;
+			left: 50%;
+			transform: translate(-50%, 0);
+		}
+		.venus-h-c-e-r-t,
+		.venus-hero-content-element-right-top {
+			top: 0;
+			right: 0;
+		}
+		.venus-h-c-e-l-c,
+		.venus-hero-content-element-left-center {
+			top: 50%;
+			left: 0;
+			transform: translate(0, -50%);
+		}
+		.venus-h-c-e-c-c,
+		.venus-hero-content-element-center-center {
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		.venus-h-c-e-r-c,
+		.venus-hero-content-element-right-center {
+			top: 50%;
+			right: 0;
+			transform: translate(0, -50%);
+		}
+		.venus-h-c-e-l-b,
+		.venus-hero-content-element-left-bottom {
+			bottom: 0;
+			left: 0;
+		}
+		.venus-h-c-e-c-b,
+		.venus-hero-content-element-center-bottom {
+			bottom: 0;
+			left: 50%;
+			transform: translate(-50%, 0);
+		}
+		.venus-h-c-e-r-b,
+		.venus-hero-content-element-right-bottom {
+			bottom: 0;
+			right: 0;
+		}
+	}
+}
