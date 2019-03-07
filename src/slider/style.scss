@@ -1,0 +1,41 @@
+.venus-slider-classic{
+  .venus-slider-classic-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > *{
+      display: none;
+      &.active{
+        display: block
+      }
+    }
+  }
+  .venus-slider-classic-nav{
+    > *{
+      &.active{
+      }
+    }
+  }
+}
+
+.venus-slider-vignette{
+   .venus-slider-vignette-slide{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+     > *{
+       display: none;
+       &.active{
+         display: block
+       }
+     }
+   }
+   .venus-slider-vignette-nav{
+     > *{
+       &.active{
+       }
+     }
+   }
+ }

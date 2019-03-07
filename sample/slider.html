@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,target-densitydpi=device-dpi, user-scalable=no">
+
+  <title>Venus - Kevinrolin.be</title>
+
+  <link type="text/css" href="../src/slider/style.css" rel="stylesheet">
+  <style>
+    h1{
+      text-align: center;
+    }
+    .venus-slider-classic,
+    .venus-slider-vignette {
+      width: 500px;
+      margin: 0 auto;
+    }
+
+    .venus-slider-classic .venus-slider-classic-nav{
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .venus-slider-vignette .venus-slider-vignette-slide{
+      border: 1px solid grey;
+    }
+    .venus-slider-vignette .venus-slider-vignette-slide > *{
+    }
+    .venus-slider-vignette .venus-slider-vignette-slide > *.active {
+    }
+    .venus-slider-vignette .venus-slider-vignette-nav{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .venus-slider-vignette .venus-slider-vignette-nav > *{
+      display: block;
+      width: 40px;
+      line-height: 40px;
+      background: #313131;
+      color: #ffffff;
+      border: 2px solid #313131;
+      border-radius: 50%;
+      text-align: center;
+      font-weight: bold;
+    }
+    .venus-slider-vignette .venus-slider-vignette-nav > *.active{
+      background: #ffffff;
+      color: #313131;
+    }
+  </style>
+</head>
+<body>
+  <!-- https://github.com/kevinrolinbe/venus -->
+
+  <h1>Simple</h1>
+
+  <div class="venus-slider-classic">
+    <div class="venus-slider-classic-slide">
+      <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida, nunc a tristique posuere, ante enim scelerisque nisi, id dictum dui urna sit amet erat. Nullam hendrerit quam ut accumsan hendrerit. Aliquam eget diam et dui finibus sodales. Pellentesque eget leo ipsum. Nunc consectetur felis lorem. Curabitur auctor gravida arcu nec dignissim. In tempor, dui non vestibulum egestas, nibh eros rhoncus dui, vitae laoreet odio augue ut lectus. Integer et nibh non diam sodales fermentum mattis et est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin suscipit est vitae metus eleifend suscipit. Phasellus a diam eu metus cursus porta a a sapien. Suspendisse scelerisque est ac ex mollis sagittis. Nullam eu lorem metus.</p>
+      </div>
+      <div>
+        <p>Donec non dolor id ipsum gravida hendrerit. Praesent iaculis vestibulum euismod. Vivamus ac ante sit amet risus consequat cursus. Duis ullamcorper nibh nec eros rhoncus ornare. Cras scelerisque ligula cursus nunc tristique, non ultricies diam ultricies. Aliquam porta nisi vitae diam scelerisque, et placerat lorem feugiat. Nunc ullamcorper fringilla varius. Proin tristique eget nibh ac ultricies. Sed porta congue porta.</p>
+      </div>
+      <div>
+        <p>Donec a dapibus dui. Vestibulum nec aliquam urna. Donec egestas pretium auctor. In et sapien porttitor, finibus nunc eget, mattis metus. Morbi sapien sem, aliquam euismod posuere sed, pellentesque ac justo. Aenean sed placerat mauris, vitae sodales nisi. Nullam auctor nisi vulputate sem congue, eget placerat nisl tincidunt. Pellentesque maximus semper augue ut commodo. Vivamus feugiat vehicula erat, ac pellentesque felis euismod vel. Duis tempus, tortor commodo dictum fermentum, neque nisi pretium tellus, et efficitur tortor justo ac nisl. Mauris velit justo, sollicitudin sit amet nunc sed, tincidunt vehicula dui. Sed non ornare ligula. Duis fringilla arcu leo, quis feugiat odio dapibus at. Etiam ut nunc dictum, scelerisque nisl id, accumsan urna.</p>
+      </div>
+      <div>
+        <img src="https://placeimg.com/320/240/nature" alt="">
+      </div>
+    </div>
+    <div class="venus-slider-classic-nav">
+      <div class="venus-slider-classic-nav-prev">
+        PREV
+      </div>
+
+      <div class="venus-slider-classic-nav-next">
+        NEXT
+      </div>
+    </div>
+  </div>
+
+  <h1>Vignette</h1>
+
+  <div class="venus-slider-vignette">
+    <div class="venus-slider-vignette-slide">
+      <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida, nunc a tristique posuere, ante enim scelerisque nisi, id dictum dui urna sit amet erat. Nullam hendrerit quam ut accumsan hendrerit. Aliquam eget diam et dui finibus sodales. Pellentesque eget leo ipsum. Nunc consectetur felis lorem. Curabitur auctor gravida arcu nec dignissim. In tempor, dui non vestibulum egestas, nibh eros rhoncus dui, vitae laoreet odio augue ut lectus. Integer et nibh non diam sodales fermentum mattis et est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin suscipit est vitae metus eleifend suscipit. Phasellus a diam eu metus cursus porta a a sapien. Suspendisse scelerisque est ac ex mollis sagittis. Nullam eu lorem metus.</p>
+      </div>
+      <div>
+        <p>Donec non dolor id ipsum gravida hendrerit. Praesent iaculis vestibulum euismod. Vivamus ac ante sit amet risus consequat cursus. Duis ullamcorper nibh nec eros rhoncus ornare. Cras scelerisque ligula cursus nunc tristique, non ultricies diam ultricies. Aliquam porta nisi vitae diam scelerisque, et placerat lorem feugiat. Nunc ullamcorper fringilla varius. Proin tristique eget nibh ac ultricies. Sed porta congue porta.</p>
+      </div>
+      <div>
+        <p>Donec a dapibus dui. Vestibulum nec aliquam urna. Donec egestas pretium auctor. In et sapien porttitor, finibus nunc eget, mattis metus. Morbi sapien sem, aliquam euismod posuere sed, pellentesque ac justo. Aenean sed placerat mauris, vitae sodales nisi. Nullam auctor nisi vulputate sem congue, eget placerat nisl tincidunt. Pellentesque maximus semper augue ut commodo. Vivamus feugiat vehicula erat, ac pellentesque felis euismod vel. Duis tempus, tortor commodo dictum fermentum, neque nisi pretium tellus, et efficitur tortor justo ac nisl. Mauris velit justo, sollicitudin sit amet nunc sed, tincidunt vehicula dui. Sed non ornare ligula. Duis fringilla arcu leo, quis feugiat odio dapibus at. Etiam ut nunc dictum, scelerisque nisl id, accumsan urna.</p>
+      </div>
+      <div>
+        <img src="https://placeimg.com/320/240/nature" alt="">
+      </div>
+    </div>
+    <div class="venus-slider-vignette-nav">
+      <div>a</div>
+      <div>b</div>
+      <div>c</div>
+      <div>d</div>
+    </div>
+  </div>
+
+  <h1>Vignette + autoplay</h1>
+
+  <div class="venus-slider-vignette" venus-slider-autoplay="1">
+    <div class="venus-slider-vignette-slide">
+      <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida, nunc a tristique posuere, ante enim scelerisque nisi, id dictum dui urna sit amet erat. Nullam hendrerit quam ut accumsan hendrerit. Aliquam eget diam et dui finibus sodales. Pellentesque eget leo ipsum. Nunc consectetur felis lorem. Curabitur auctor gravida arcu nec dignissim. In tempor, dui non vestibulum egestas, nibh eros rhoncus dui, vitae laoreet odio augue ut lectus. Integer et nibh non diam sodales fermentum mattis et est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin suscipit est vitae metus eleifend suscipit. Phasellus a diam eu metus cursus porta a a sapien. Suspendisse scelerisque est ac ex mollis sagittis. Nullam eu lorem metus.</p>
+      </div>
+      <div>
+        <p>Donec non dolor id ipsum gravida hendrerit. Praesent iaculis vestibulum euismod. Vivamus ac ante sit amet risus consequat cursus. Duis ullamcorper nibh nec eros rhoncus ornare. Cras scelerisque ligula cursus nunc tristique, non ultricies diam ultricies. Aliquam porta nisi vitae diam scelerisque, et placerat lorem feugiat. Nunc ullamcorper fringilla varius. Proin tristique eget nibh ac ultricies. Sed porta congue porta.</p>
+      </div>
+      <div>
+        <p>Donec a dapibus dui. Vestibulum nec aliquam urna. Donec egestas pretium auctor. In et sapien porttitor, finibus nunc eget, mattis metus. Morbi sapien sem, aliquam euismod posuere sed, pellentesque ac justo. Aenean sed placerat mauris, vitae sodales nisi. Nullam auctor nisi vulputate sem congue, eget placerat nisl tincidunt. Pellentesque maximus semper augue ut commodo. Vivamus feugiat vehicula erat, ac pellentesque felis euismod vel. Duis tempus, tortor commodo dictum fermentum, neque nisi pretium tellus, et efficitur tortor justo ac nisl. Mauris velit justo, sollicitudin sit amet nunc sed, tincidunt vehicula dui. Sed non ornare ligula. Duis fringilla arcu leo, quis feugiat odio dapibus at. Etiam ut nunc dictum, scelerisque nisl id, accumsan urna.</p>
+      </div>
+      <div>
+        <img src="https://placeimg.com/320/240/nature" alt="">
+      </div>
+    </div>
+    <div class="venus-slider-vignette-nav">
+      <div>a</div>
+      <div>b</div>
+      <div>c</div>
+      <div>d</div>
+    </div>
+  </div>
+
+  <h1>Vignette + autoplay + time=1000</h1>
+
+  <div class="venus-slider-vignette" venus-slider-autoplay="1" venus-slider-autoplay-time="1000">
+    <div class="venus-slider-vignette-slide">
+      <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida, nunc a tristique posuere, ante enim scelerisque nisi, id dictum dui urna sit amet erat. Nullam hendrerit quam ut accumsan hendrerit. Aliquam eget diam et dui finibus sodales. Pellentesque eget leo ipsum. Nunc consectetur felis lorem. Curabitur auctor gravida arcu nec dignissim. In tempor, dui non vestibulum egestas, nibh eros rhoncus dui, vitae laoreet odio augue ut lectus. Integer et nibh non diam sodales fermentum mattis et est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin suscipit est vitae metus eleifend suscipit. Phasellus a diam eu metus cursus porta a a sapien. Suspendisse scelerisque est ac ex mollis sagittis. Nullam eu lorem metus.</p>
+      </div>
+      <div>
+        <p>Donec non dolor id ipsum gravida hendrerit. Praesent iaculis vestibulum euismod. Vivamus ac ante sit amet risus consequat cursus. Duis ullamcorper nibh nec eros rhoncus ornare. Cras scelerisque ligula cursus nunc tristique, non ultricies diam ultricies. Aliquam porta nisi vitae diam scelerisque, et placerat lorem feugiat. Nunc ullamcorper fringilla varius. Proin tristique eget nibh ac ultricies. Sed porta congue porta.</p>
+      </div>
+      <div>
+        <p>Donec a dapibus dui. Vestibulum nec aliquam urna. Donec egestas pretium auctor. In et sapien porttitor, finibus nunc eget, mattis metus. Morbi sapien sem, aliquam euismod posuere sed, pellentesque ac justo. Aenean sed placerat mauris, vitae sodales nisi. Nullam auctor nisi vulputate sem congue, eget placerat nisl tincidunt. Pellentesque maximus semper augue ut commodo. Vivamus feugiat vehicula erat, ac pellentesque felis euismod vel. Duis tempus, tortor commodo dictum fermentum, neque nisi pretium tellus, et efficitur tortor justo ac nisl. Mauris velit justo, sollicitudin sit amet nunc sed, tincidunt vehicula dui. Sed non ornare ligula. Duis fringilla arcu leo, quis feugiat odio dapibus at. Etiam ut nunc dictum, scelerisque nisl id, accumsan urna.</p>
+      </div>
+      <div>
+        <img src="https://placeimg.com/320/240/nature" alt="">
+      </div>
+    </div>
+    <div class="venus-slider-vignette-nav">
+      <div>a</div>
+      <div>b</div>
+      <div>c</div>
+      <div>d</div>
+    </div>
+  </div>
+
+  <h1>Vignette + autoplay + time=1000 + hoverstop</h1>
+
+  <div class="venus-slider-vignette" venus-slider-autoplay="1" venus-slider-autoplay-time="1000" venus-slider-autoplay-hoverstop="1">
+    <div class="venus-slider-vignette-slide">
+      <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida, nunc a tristique posuere, ante enim scelerisque nisi, id dictum dui urna sit amet erat. Nullam hendrerit quam ut accumsan hendrerit. Aliquam eget diam et dui finibus sodales. Pellentesque eget leo ipsum. Nunc consectetur felis lorem. Curabitur auctor gravida arcu nec dignissim. In tempor, dui non vestibulum egestas, nibh eros rhoncus dui, vitae laoreet odio augue ut lectus. Integer et nibh non diam sodales fermentum mattis et est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin suscipit est vitae metus eleifend suscipit. Phasellus a diam eu metus cursus porta a a sapien. Suspendisse scelerisque est ac ex mollis sagittis. Nullam eu lorem metus.</p>
+      </div>
+      <div>
+        <p>Donec non dolor id ipsum gravida hendrerit. Praesent iaculis vestibulum euismod. Vivamus ac ante sit amet risus consequat cursus. Duis ullamcorper nibh nec eros rhoncus ornare. Cras scelerisque ligula cursus nunc tristique, non ultricies diam ultricies. Aliquam porta nisi vitae diam scelerisque, et placerat lorem feugiat. Nunc ullamcorper fringilla varius. Proin tristique eget nibh ac ultricies. Sed porta congue porta.</p>
+      </div>
+      <div>
+        <p>Donec a dapibus dui. Vestibulum nec aliquam urna. Donec egestas pretium auctor. In et sapien porttitor, finibus nunc eget, mattis metus. Morbi sapien sem, aliquam euismod posuere sed, pellentesque ac justo. Aenean sed placerat mauris, vitae sodales nisi. Nullam auctor nisi vulputate sem congue, eget placerat nisl tincidunt. Pellentesque maximus semper augue ut commodo. Vivamus feugiat vehicula erat, ac pellentesque felis euismod vel. Duis tempus, tortor commodo dictum fermentum, neque nisi pretium tellus, et efficitur tortor justo ac nisl. Mauris velit justo, sollicitudin sit amet nunc sed, tincidunt vehicula dui. Sed non ornare ligula. Duis fringilla arcu leo, quis feugiat odio dapibus at. Etiam ut nunc dictum, scelerisque nisl id, accumsan urna.</p>
+      </div>
+      <div>
+        <img src="https://placeimg.com/320/240/nature" alt="">
+      </div>
+    </div>
+    <div class="venus-slider-vignette-nav">
+      <div>a</div>
+      <div>b</div>
+      <div>c</div>
+      <div>d</div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="../src/slider/script.min.js"></script>
+</body>
+</html>
