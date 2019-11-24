@@ -23,6 +23,7 @@
 	vertical-align: top;
 	text-rendering: auto;
 	box-sizing: border-box;
+	flex: auto;
 }
 
 .venus-g-auto,
@@ -272,6 +273,7 @@
 	[class^="venus-grid-sm-"],
 	[class*="venus-grid-sm-"]{
 		display: inline-block;
+		flex: auto;
 	}
 
 	.venus-g-sm-none,
@@ -513,6 +515,7 @@
 	[class^="venus-grid-md-"],
 	[class*="venus-grid-md-"]{
 		display: inline-block;
+		flex: auto;
 	}
 
 	.venus-g-md-none,
@@ -754,6 +757,7 @@
 	[class^="venus-grid-lg-"],
 	[class*="venus-grid-lg-"]{
 		display: inline-block;
+		flex: auto;
 	}
 
 	.venus-g-lg-none,
@@ -995,6 +999,7 @@
 	[class^="venus-grid-xl-"],
 	[class*="venus-grid-xl-"]{
 		display: inline-block;
+		flex: auto;
 	}
 
 	.venus-g-xl-none,

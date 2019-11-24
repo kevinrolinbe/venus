@@ -1,0 +1,26 @@
+/* MIXINS */
+@mixin venusRoundedButton($height, $paddinghorizontal, $background, $border, $bordersize, $hoverbackground, $hoverborder) {
+  background: $background;
+  border: $bordersize solid $border;
+  line-height: $lineheight;
+  padding: 0 $paddinghorizontal;
+  &:hover{
+    background: $hoverbackground;
+    border: $hoverbordersize solid $hoverborder;
+  }
+}
+
+@mixin venusSvgToBackground($svg, $color, $width, $height) {
+  background-color: $color;
+  -webkit-mask: url($svg) no-repeat 50% 50%;
+  mask: url($svg) no-repeat 50% 50%;
+  -webkit-mask-size: $width $height;
+  mask-size: $width $height;
+}
+
+@mixin venusGridPosition($column, $columnLength, $row, $rowLength) {
+  grid-column-start: $column;
+  grid-column-end: $column + $columnLength;
+  grid-row-start: $row;
+  grid-row-end: $row + $rowLength;
+}

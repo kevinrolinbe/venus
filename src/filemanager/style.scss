@@ -1,0 +1,276 @@
+:root{
+  --venusFilemanagerColorMain: #f37a41;
+  --venusFilemanagerColorSecond: #cc5b37;
+  /*--venusFilemanagerColorOk: #b8e986;*/
+  /*--venusFilemanagerColorError: #ff7474;*/
+  /*color: var(--venusFilemanagerColorMain, #44c8ba);*/
+}
+
+.customFileManager{
+
+  .venus-filemanager-dropzone {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5000;
+    background: rgba(118, 218, 255, 0.5);
+
+    .venus-filemanager-dropzone-content {
+      display: flex;
+      width: 100%;
+      height: 100%;
+
+      span {
+        padding: 25px;
+        margin: auto;
+        border: 3px dashed white;
+        color: white;
+        font-weight: bold;
+        font-size: 48px;
+      }
+    }
+  }//.venus-filemanager-dropzone {
+
+  .venus-filemanager-messagezone {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5000;
+    background: rgba(118, 218, 255, 0.5);
+
+    .venus-filemanager-messagezone-content {
+      display: flex;
+      width: 100%;
+      height: 100%;
+
+      > div {
+        padding: 25px;
+        margin: auto;
+        border: 2px solid white;
+        color: white;
+        background: #46475a;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.02);
+        border-radius: 5px;
+      }
+
+      div{
+        input{
+          padding: 5px 10px;
+
+          &.error{
+            border: 1px solid #ff7474;
+          }
+        }
+        button{
+          background: white;
+          border: 1px solid #f2f2f2;
+          padding: 7px;
+          margin: 10px;
+          border-radius: 3px;
+          cursor: pointer;
+
+          &#venus-filemanager-messagezone-confirm:hover{
+            background: #b8e986;
+          }
+          &#venus-filemanager-messagezone-cancel:hover{
+            background: #ff7474;
+          }
+        }
+      }
+    }
+  }//.venus-filemanager-messagezone {
+
+  .venus-filemanager-table {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.02);
+    border-collapse: collapse;
+
+    > tbody > tr > td {
+      padding: 0 !important;
+
+      &.venus-filemanager-folders {
+        min-width: 150px;
+        width: 150px;
+        height: 100%;
+        max-height: 100%;
+        vertical-align: top;
+        border-collapse: separate;
+        color: #323449;
+
+        > ul{
+          display: block;
+          height: 100%;
+          overflow-y: scroll;
+          overflow-x: hidden;
+          resize: horizontal;
+          max-width: 300px;
+          min-width: 150px;
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+
+          li{
+            width: 100%;
+            display: table;
+            table-layout: fixed;
+            text-overflow: clip;
+            white-space: nowrap;
+            /*overflow: hidden;*/
+            cursor: pointer;
+            line-height: 20px;
+
+            i {
+              margin-right: 5px;
+            }
+            ul {
+              display: none;
+              width: 100%;
+              overflow: inherit;
+              resize: inherit;
+              padding: 0;
+              list-style: none;
+              padding-left: 7px;
+              margin-left: 7px;
+              border-left: 1px solid var(--venusFilemanagerColorMain);
+
+            }
+
+            > ul {
+              display: inherit;
+            }
+
+            &:hover > i,
+            &.show > i {
+              color: var(--venusFilemanagerColorMain);
+            }
+            &.show > ul {
+              display: inherit;
+            }
+          }
+          > li {
+            padding: 10px 10px 10px 10px;
+          }
+        }
+      }//&.venus-filemanager-folders
+
+      &.venus-filemanager-files {
+        vertical-align: top;
+        max-height: 100%;
+        max-height: 100px;
+
+        .venus-filemanager-toolbar {
+          height: 40px;
+          background: var(--venusFilemanagerColorMain);
+          color: white;
+
+          a{
+            display: inline-block;
+            line-height: 40px;
+            padding: 0 10px;
+            color: white;
+
+            i{
+              margin-right: 5px;
+            }
+
+            &:hover{
+              background: var(--venusFilemanagerColorSecond);
+            }
+          }
+        }//.venus-filemanager-toolbar {
+
+        .venus-filemanager-list {
+          width: 100%;
+          height: 100%;
+          max-height: calc( 100% - 40px);
+          overflow-y: scroll;
+          overflow-x: hidden;
+
+          table{
+            width: 100%;
+            thead{
+              tr{
+                th{
+                  padding: 0 15px;
+                  font-size: 14px;
+                  font-weight: 300;
+                  line-height: 30px;
+                  border-bottom: 1px solid var(--venusFilemanagerColorSecond);
+                  &.date{
+                    width: 80px;
+                  }
+                  &.type{
+                    width: 100px;
+                  }
+                  &.size{
+                    width: 70px;
+                  }
+                  &.actions {
+                    padding: 0;
+                    width: 64px;
+                  }
+                }
+              }
+            }
+            tbody{
+              tr{
+                &:nth-child(even){
+                  background: #f2f2f2;
+                }
+
+                td{
+                  padding: 3px 15px;
+                  font-size: 13px;
+                  font-weight: 300;
+                  &.date{
+                    text-align: center;
+                  }
+                  &.type{
+                    text-align: center;
+                  }
+                  &.size{
+                    text-align: right;
+                  }
+                  &.actions {
+                    padding: 3px 0;
+                    border-right: none;
+
+                    a {
+                      padding: 8px;
+                      color: var(--venusFilemanagerColorMain);
+                      &:hover{
+                        text-decoration: none;
+                        border: none;
+                        color: var(--venusFilemanagerColorSecond);
+                      }
+                    }
+                    input{
+                      position: absolute;
+                      z-index: -999;
+                      opacity: 0;
+                      top: -9999px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }//.venus-filemanager-list {
+      }//&.venus-filemanager-files {
+    }
+  }//.venus-filemanager-table {
+
+  .venus-filemanager-input{
+    position: relative;
+    top: -999999px;
+  }//.venus-filemanager-input{
+}
